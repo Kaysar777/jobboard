@@ -52,18 +52,18 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/vue@next"></script>
-    {% block scripts %}
-        <script>
-            const Burger = {
-                data() {
-                    return {
-                        isOpen: false
-                    }
+    <script>
+        const Burger = {
+            data() {
+                return {
+                    isOpen: false
                 }
             }
+        }
 
-            Vue.createApp(Burger).mount('#navbar')
-        </script>
+        Vue.createApp(Burger).mount('#navbar')
+    </script>
+    {% block scripts %}
     {% endblock %}
 </body>
 </html>
